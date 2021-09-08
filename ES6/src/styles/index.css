@@ -1,0 +1,19 @@
+html, body {
+  background: #2c3e50;
+  color: #fff;
+  font-family: 'Glory', sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+html h1, body h1 {
+  font-size: 40px;
+  text-align: center;
+  color: #e74c3c;
+}
+
+html p, body p {
+  text-align: center;
+  font-size: 18px;
+}
+/*# sourceMappingURL=index.css.map */
