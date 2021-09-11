@@ -1,73 +1,61 @@
-const path = require("path");
-
-const MiniCssExtractPlugin = require("mini-css-extract-plugin")
-const HtmlWebpackPlugin = require("html-webpack-plugin")
-const CleanWebpackPlugin = require('clean-webpack-plugin')
+const path = require('path')
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+require('@babel/register')
 
 module.exports = {
-  entry: "./src/scripts/index.js",
+    //Entry
+    entry: ['@babel/polyfill', './src/scripts/index.js'],
 
-  output: {
-    filename: "[name].[hash].js",
-    path: path.resolve(__dirname, "dist")
-  },
+    //Output
+    output: {
+        filename: 'bundle.js',
+        path: path.resolve(__dirname, 'dist')
+    },
 
-  mode: "development",
+    //Module
+    module: {
+        rules: [
 
-  devtool: 'inline-source-map',
+            //JS
+            {
+                test: /\.js$/,
+                exclude: /node_modules/,
+                use: ['babel-loader']
+            },
 
-  devServer: {
-    contentBase: './dist',
-    open: true
-  },
-
-  module: {
-    rules: [
-      {
-        test: /\.js$/,
-        use: "babel-loader"
-      },
-      {
-        test: /\.scss$/,
-        use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader"]
-      },
-      {
-        test: /\.html$/,
-        use: {
-          loader: "html-loader",
-          options: {
-            minimize: false,
-            removeComments: false,
-            collapseWhitespace: false
-          }
-        }
-      },
-      {
-        test: /\.(png|jpg|gif|svg)$/,
-        use: [
-          {
-            loader: "file-loader",
-            options: {
-              name: "[name].[ext]",
-              outputPath: "images/",
-              publicPath: "images/"
-            }
-          }
+            //SASS
+            {
+                test: /\.scss$/,
+                use: [
+                    // Creates `style` nodes from JS strings
+                    "style-loader",
+                    // Translates CSS into CommonJS
+                    "css-loader",
+                    // Compiles Sass to CSS
+                    "sass-loader",
+                ],
+            },
         ]
-      }
+    },
+
+    //Plugin
+    plugins: [
+        new HtmlWebpackPlugin({
+            template: './src/index.html'
+        })
     ]
-  },
+    ,
 
-  plugins: [
-    new MiniCssExtractPlugin({
-      filename: "[name].css",
-      chunkFilename: "[id].css"
-    }),
+    //Dev Server
+    devServer: {
+        open: true,
+        compress: true,
+        // contentBase: './dist'
+    },
 
-    new HtmlWebpackPlugin({
-      template: "./src/index.html"
-    }),
+    //Mode
+    mode: 'development',
 
-    new CleanWebpackPlugin('dist')
-  ]
-};
+    //Devtoo
+    devtool: 'inline-source-map'
+}

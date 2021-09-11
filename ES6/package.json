@@ -1,28 +1,32 @@
 {
-  "name": "wp-demo",
+  "name": "es6",
   "version": "1.0.0",
-  "description": "webpack 4 demo",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "build": "webpack",
-    "start": "webpack-dev-server"
+    "start": "webpack-dev-server",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "keywords": [],
   "author": "Mrh Rifat",
   "license": "ISC",
   "devDependencies": {
-    "babel-core": "^6.26.3",
-    "babel-loader": "^7.1.4",
-    "babel-preset-env": "^1.7.0",
-    "clean-webpack-plugin": "^0.1.19",
-    "css-loader": "^0.28.11",
-    "file-loader": "^1.1.11",
-    "html-loader": "^0.5.5",
-    "html-webpack-plugin": "^3.2.0",
-    "mini-css-extract-plugin": "^0.4.0",
-    "node-sass": "^4.9.0",
-    "sass-loader": "^7.0.3",
-    "webpack": "^4.12.0",
-    "webpack-cli": "^3.0.3",
-    "webpack-dev-server": "^3.1.4"
+    "@babel/cli": "^7.15.4",
+    "@babel/core": "^7.15.5",
+    "@babel/node": "^7.15.4",
+    "@babel/polyfill": "^7.12.1",
+    "@babel/preset-env": "^7.15.6",
+    "@babel/register": "^7.15.3",
+    "babel-loader": "^8.2.2",
+    "babel-register": "^6.26.0",
+    "css-loader": "^6.2.0",
+    "html-webpack-plugin": "^5.3.2",
+    "sass": "^1.39.2",
+    "sass-loader": "^12.1.0",
+    "style-loader": "^3.2.1",
+    "webpack": "^5.52.1",
+    "webpack-cli": "^4.8.0",
+    "webpack-dev-server": "^4.2.0"
   }
 }
