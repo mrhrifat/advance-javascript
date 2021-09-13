@@ -1,3 +1,4 @@
+import "./Iterator"
 import "../styles/index.scss"
 
 
@@ -113,12 +114,12 @@ console.log(i)
 if (true) {
     let l = 10
 }
-console.log(l)
+// console.log(l)
 
 for (let j = 10; i > 5; i--) {
 
 }
-console.log(j)
+// console.log(j)
 
 // 142 - Arrow Function
 
@@ -435,3 +436,38 @@ console.log(one, two, three, four)
 // console.log(first, second)
 
 // 149 - Object From Entrires
+
+var obj8 = {
+    a: 10,
+    b: 20,
+    c: 30
+}
+console.log(obj8)
+console.log(Object.entries(obj8))
+var arr2 = [
+    ['a', 10],
+    ['b', 20],
+    ['c', 30]
+]
+console.log(arr2)
+console.log(Object.fromEntries(arr2))
+
+// Symbol
+// It's a primitive data types
+
+let a1 = Symbol()
+let b1 = Symbol('Second')
+
+console.log(a1, b1)
+console.log(a1 == b1)
+
+let head = Symbol("Head")
+let tail = Symbol("Tail")
+console.log(head, tail)
+console.log(head == tail)
+
+let toss = {
+    head: Symbol("Head"),
+    tail: Symbol("Tail")
+}
+console.log(toss)
