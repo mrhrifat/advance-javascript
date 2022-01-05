@@ -43,3 +43,15 @@ JavaScript ES6 brings new syntax and new awesome features to make your code more
 **Note:** There is more ES6 concept like Error Handling, Asynchronous JavaScript, Async Await, Promise. I will cover this in [Development JavaScript](https://github.com/mrhrifat/development-javascript) repository.
 
 
+## How To Contribute
+I will be open to any contribution. If you have any idea, please let me know.
+- Fork the repository.
+- Make your changes.
+- Commit your changes.
+- Create a pull request.
+- Wait for the pull request to be merged.
+
+**Note:** If you want to do a major changes than first create an Issue.
+
+## License
+This project is licensed under [GPL-3.0](https://github.com/mrhrifat/advance-javascript/blob/master/LICENSE.md).
