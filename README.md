@@ -1,9 +1,11 @@
-### Advance JavaScript
+## Advance JavaScript
+Before [Advance JavaScript](https://github.com/mrhrifat/advance-javascript). First we need to know, 
+- What is JavaScript JavaScript?
+    - JavaScript is the most popular Programming language in the world. Over [97%](https://en.wikipedia.org/wiki/JavaScript#cite_note-deployedstats-12) of websites use JavaScript on the client side for web page behavior, often incorporating third-party libraries. 
+- Why JavaScript 
+    - Why not? All major web browsers have a dedicated JavaScript engine to execute the code on users' devices. It can be used in Front-end, Back-end, Android, IOS, Desktop & AI also.  So I decided to learn & practice **JavaScript That All Need To Know**. 
 
- <p align="justify"> JavaScript is the most popular programming language in the world. The most useful features of Java Script are, it is lightweight, platform independent, asynchronous, functional, object based, interpreted language. It can be used in Front End, Back End, Mobile, IOS, Desktop & AI also. 
- <p>
+Learn more about [JavaScript](https://en.wikipedia.org/wiki/JavaScript) 
 
-### Objectives
-<p align="justify">
-In this repositories I will learn advance topics of JavaScript. Like, ES6, Error Handling, Ajax, DOM Manipulation etc.
-<p>
+**Caution:** If you don't know **Basic or Advance JavaScript**. Then you won't be able to Understand **ES6 or Advance JavaScript**. But why fear, when the **Basic & Advance JavaScript** repository is [here](https://github.com/mrhrifat/javascript-all-to-know). Go & first learn from it. Then you'll be able to learn ES6.
+
